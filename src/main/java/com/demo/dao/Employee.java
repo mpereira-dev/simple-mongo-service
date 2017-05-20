@@ -17,6 +17,7 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String middleInitial;
+    private String emailAddress;
     private Long phoneNumber;
     private String positionCategory;
     // TODO use a specific date time format
@@ -59,6 +60,14 @@ public class Employee {
 
     public void setMiddleInitial(String middleInitial) {
         this.middleInitial = middleInitial;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 
     public Long getPhoneNumber() {
