@@ -12,8 +12,6 @@ public class Employee {
 
     @Id
     private String id;
-
-    // TODO add additional constraint annotations.
     private String firstName;
     private String lastName;
     private String middleInitial;
@@ -28,7 +26,6 @@ public class Employee {
     private String state;
     private int zipCode;
     private boolean active;
-    private boolean deleted;// Implement soft delete feature.
 
     public String getId() {
         return id;
@@ -142,11 +139,4 @@ public class Employee {
         this.active = active;
     }
 
-    public boolean isDeleted() {
-        return deleted;
-    }
-
-    public void setDeleted(boolean deleted) {
-        this.deleted = deleted;
-    }
 }
